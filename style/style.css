@@ -1,0 +1,72 @@
+* {
+    Margin:0;
+    padding:0;
+  }
+body{
+    font-family: sans-serif;
+    background-color: rgb(52, 71, 159);
+}
+.heroBanner ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 25px;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.heroBanner ul li{
+    height: 100%;
+    width: auto;
+}
+.heroBannerImg{
+    background-image: url("../img/digitalbank.jpg");
+    height: 100%;
+    width: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroBannerImg h1{
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  color: white;
+  vertical-align: middle;
+  text-shadow: 0 0 8px black;
+}
+.heroBannerImg h2{
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  text-shadow: 0 0 8px black;
+}
+.heroBannerImg ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0px;
+    height: 2rem;
+    align-items: center;
+}
+.heroBannerImg ul li{
+    height: 2rem;
+    width: 5rem;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+}
+.boton{
+    text-align: center;
+    height: 2rem;
+    width: 8rem;
+    border: 5px black;
+    border-radius: 10px;
+    background-color: greenyellow;
+    padding-top: 10px;
+}
+.boton a{
+    vertical-align:auto;
+    text-decoration: none;
+    font-weight: 550;
+}
