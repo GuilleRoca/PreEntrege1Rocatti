@@ -15,6 +15,10 @@ let amortizacion = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 let montoCuota
 let contador = 0
 
+function cuotaCreditoFrances (monto , tasa , cantidadCuotas){
+    return ((monto*(tasa/12)*((1+(tasa/12))**cantidadCuotas))/(((1+(tasa/12))**cantidadCuotas)-1));
+}
+
 while (exit === false){
 
     if (tipoCliente === "inicio"){
@@ -72,7 +76,8 @@ while (exit === false){
 
                     cantidadCuotas = prompt(`Usted tiene pre-aprobado el monto solicitado de $${monto}\nSolo resta que seleccione las cantidad de cuotas en que desea devolver el crédito\nPuede seleccionar entre 1 y 36 cuotas\nIngrese la cantidad de cuotas en que queire devolver el crédito\nPara salir presiones CANCELAR \nSi desea volver al menú anterior presione 0`)
                     
-                    montoCuota = ((monto*(tasa/12)*((1+(tasa/12))**cantidadCuotas))/(((1+(tasa/12))**cantidadCuotas)-1))
+
+                    montoCuota = cuotaCreditoFrances (monto , tasa , cantidadCuotas)
                     
                     if (cantidadCuotas == null){
                         exitMonto=true
